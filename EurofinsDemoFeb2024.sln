@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstConsoleApp", "FirstConsoleApp\FirstConsoleApp.csproj", "{38CAF0D7-C3FE-40A2-B471-2759DE02BCF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{7ECC1BD2-E42E-4F17-B24D-7B777D5473EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputeLibrary", "ComputeLibrary\ComputeLibrary.csproj", "{70A34373-FA34-47FB-9176-6740A3056C49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "My Simple Calculator App", "My Simple Calculator App", "{D133E5AD-807D-4DCE-8D91-43AFF886ECA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{4C0C1E65-0589-4CD2-B62C-913B59388978}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{E9DAAAEF-2B52-4AB6-9CF5-2CD2C92006F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator.WindowsFormsApp", "SimpleCalculator.WindowsFormsApp\SimpleCalculator.WindowsFormsApp.csproj", "{E290F81F-D2AB-4A2A-B2A5-DE52B850DC97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38CAF0D7-C3FE-40A2-B471-2759DE02BCF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CAF0D7-C3FE-40A2-B471-2759DE02BCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CAF0D7-C3FE-40A2-B471-2759DE02BCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CAF0D7-C3FE-40A2-B471-2759DE02BCF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ECC1BD2-E42E-4F17-B24D-7B777D5473EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECC1BD2-E42E-4F17-B24D-7B777D5473EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECC1BD2-E42E-4F17-B24D-7B777D5473EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECC1BD2-E42E-4F17-B24D-7B777D5473EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A34373-FA34-47FB-9176-6740A3056C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A34373-FA34-47FB-9176-6740A3056C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A34373-FA34-47FB-9176-6740A3056C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A34373-FA34-47FB-9176-6740A3056C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E290F81F-D2AB-4A2A-B2A5-DE52B850DC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E290F81F-D2AB-4A2A-B2A5-DE52B850DC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E290F81F-D2AB-4A2A-B2A5-DE52B850DC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E290F81F-D2AB-4A2A-B2A5-DE52B850DC97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7ECC1BD2-E42E-4F17-B24D-7B777D5473EA} = {4C0C1E65-0589-4CD2-B62C-913B59388978}
+		{70A34373-FA34-47FB-9176-6740A3056C49} = {E9DAAAEF-2B52-4AB6-9CF5-2CD2C92006F1}
+		{4C0C1E65-0589-4CD2-B62C-913B59388978} = {D133E5AD-807D-4DCE-8D91-43AFF886ECA1}
+		{E9DAAAEF-2B52-4AB6-9CF5-2CD2C92006F1} = {D133E5AD-807D-4DCE-8D91-43AFF886ECA1}
+		{E290F81F-D2AB-4A2A-B2A5-DE52B850DC97} = {4C0C1E65-0589-4CD2-B62C-913B59388978}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C13A543-40EC-45BE-A66A-2135669D4278}
+	EndGlobalSection
+EndGlobal
