@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E51B4EA7-F04A-4C9D-8DAB-92D9FD354D60}</ProjectGuid>
+    <ProjectGuid>{40C5B33F-CA28-46C6-A761-733E0FD2C091}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LabsAndRef</RootNamespace>
-    <AssemblyName>LabsAndRef</AssemblyName>
+    <RootNamespace>OODemo1</RootNamespace>
+    <AssemblyName>OODemo1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,11 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Labs\OO LABS to Participants.zip" />
-    <None Include="Reference\C# Programming Ref Notes and Labs- Venkat.pdf" />
-    <None Include="Reference\Introduction to dotNET Framework.pdf" />
-    <None Include="Reference\Unit 1 - Introduction to Object Oriented Approach.pdf" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

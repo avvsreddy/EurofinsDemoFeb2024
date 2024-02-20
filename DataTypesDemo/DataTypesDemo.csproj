@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E51B4EA7-F04A-4C9D-8DAB-92D9FD354D60}</ProjectGuid>
+    <ProjectGuid>{85FC86E0-8545-4586-8ED0-AE235AD7E5DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LabsAndRef</RootNamespace>
-    <AssemblyName>LabsAndRef</AssemblyName>
+    <RootNamespace>DataTypesDemo</RootNamespace>
+    <AssemblyName>DataTypesDemo</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,11 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Labs\OO LABS to Participants.zip" />
-    <None Include="Reference\C# Programming Ref Notes and Labs- Venkat.pdf" />
-    <None Include="Reference\Introduction to dotNET Framework.pdf" />
-    <None Include="Reference\Unit 1 - Introduction to Object Oriented Approach.pdf" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator.WindowsFor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabsAndRef", "LabsAndRef\LabsAndRef.csproj", "{E51B4EA7-F04A-4C9D-8DAB-92D9FD354D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypesDemo", "DataTypesDemo\DataTypesDemo.csproj", "{85FC86E0-8545-4586-8ED0-AE235AD7E5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo1", "OODemo1\OODemo1.csproj", "{40C5B33F-CA28-46C6-A761-733E0FD2C091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{E51B4EA7-F04A-4C9D-8DAB-92D9FD354D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E51B4EA7-F04A-4C9D-8DAB-92D9FD354D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E51B4EA7-F04A-4C9D-8DAB-92D9FD354D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FC86E0-8545-4586-8ED0-AE235AD7E5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FC86E0-8545-4586-8ED0-AE235AD7E5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FC86E0-8545-4586-8ED0-AE235AD7E5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FC86E0-8545-4586-8ED0-AE235AD7E5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C5B33F-CA28-46C6-A761-733E0FD2C091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C5B33F-CA28-46C6-A761-733E0FD2C091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C5B33F-CA28-46C6-A761-733E0FD2C091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C5B33F-CA28-46C6-A761-733E0FD2C091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
