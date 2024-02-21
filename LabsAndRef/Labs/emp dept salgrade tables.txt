@@ -1,0 +1,132 @@
+-- Create the 'dept' table
+CREATE TABLE dept (
+    deptno INT PRIMARY KEY,
+    dname VARCHAR(50),
+    loc VARCHAR(50)
+);
+
+-- Insert sample data into the 'dept' table
+INSERT INTO dept (deptno, dname, loc)
+VALUES
+    (10, 'HR', 'New York'),
+    (20, 'IT', 'San Francisco'),
+    (30, 'Sales', 'Los Angeles'),
+    (40, 'Marketing', 'Chicago');
+
+-- Create the 'salgrade' table
+CREATE TABLE salgrade (
+    grade INT PRIMARY KEY,
+    losal INT,
+    hisal INT
+);
+
+-- Insert sample data into the 'salgrade' table
+INSERT INTO salgrade (grade, losal, hisal)
+VALUES
+    (1, 1000, 2000),
+    (2, 2001, 3000),
+    (3, 3001, 4000),
+    (4, 4001, 5000),
+    (5, 5001, 6000);
+
+-- Create the 'emp' table
+CREATE TABLE emp (
+    empno INT PRIMARY KEY,
+    ename VARCHAR(50),
+    job VARCHAR(50),
+    mgr INT,
+    hiredate DATE,
+    sal INT,
+    comm INT,
+    deptno INT,
+    FOREIGN KEY (deptno) REFERENCES dept(deptno)
+);
+
+-- Insert sample data into the 'emp' table
+INSERT INTO emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES
+    (7369, 'Smith', 'Clerk', 7902, '1980-12-17', 800, NULL, 20),
+    (7499, 'Allen', 'Salesman', 7698, '1981-02-20', 1600, 300, 30),
+    (7521, 'Ward', 'Salesman', 7698, '1981-02-22', 1250, 500, 30),
+    (7566, 'Jones', 'Manager', 7839, '1981-04-02', 2975, NULL, 20),
+    (7654, 'Martin', 'Salesman', 7698, '1981-09-28', 1250, 1400, 30),
+    (7698, 'Blake', 'Manager', 7839, '1981-05-01', 2850, NULL, 30),
+    (7782, 'Clark', 'Manager', 7839, '1981-06-09', 2450, NULL, 10),
+    (7788, 'Scott', 'Analyst', 7566, '1982-12-09', 3000, NULL, 20),
+    (7839, 'King', 'President', NULL, '1981-11-17', 5000, NULL, 10),
+    (7844, 'Turner', 'Salesman', 7698, '1981-09-08', 1500, 0, 30),
+    (7876, 'Adams', 'Clerk', 7788, '1983-01-12', 1100, NULL, 20);
+
+-- Commit the changes
+COMMIT;
+
+
+------BASIC SQL LABS ----------------
+
+
+Here are 25 SQL select query exercises based on the `emp` and 'dept' table for practice:
+
+1. Retrieve all columns for all employees.
+2. Retrieve the names and job titles of all employees.
+3. Retrieve the unique department numbers from the `emp` table.
+4. Retrieve the names of employees hired after January 1, 1982.
+5. Retrieve the names of employees whose job title is 'Manager.'
+6. Retrieve the names and salaries of employees earning more than 2500.
+7. Retrieve the names, job titles, and salaries of employees hired in department 20.
+8. Retrieve the names of employees who don't have a manager (`mgr` is NULL).
+9. Retrieve the average salary of all employees.
+10. Retrieve the highest salary from the `emp` table.
+11. Retrieve the names of employees who earn the highest salary.
+12. Retrieve the names and hire dates of employees hired in 1981.
+13. Retrieve the names of employees who work in departments located in 'New York.'
+14. Retrieve the names of employees who work in departments with a location containing 'Los Angeles.'
+15. Retrieve the names of employees whose salary is in the range of 2000 to 3000.
+16. Retrieve the names of employees in department 30 with a salary greater than 1500.
+17. Retrieve the names of employees in department 10 or department 20.
+18. Retrieve the names of employees who have a commission (`comm`) value.
+19. Retrieve the names of employees whose names start with the letter 'S.'
+20. Retrieve the names of employees whose names end with the letter 'E.'
+21. Retrieve the names of employees whose names contain the letter 'A.'
+22. Retrieve the names of employees in department 20 who have 'Clerk' in their job title.
+23. Retrieve the names of employees who work in the same department as 'Jones' (use a subquery).
+24. Retrieve the names and salaries of employees sorted by salary in ascending order.
+25. Retrieve the names of employees with the same job title as 'King' but different employee numbers.
+
+These exercises cover a variety of SQL query scenarios that you can use to practice your SQL skills with the `emp` table. You can modify and expand upon these exercises to further challenge yourself.
+
+
+---- Advanced SQL Labs -----
+
+Here are 10 SQL lab exercises that involve using the `emp`, `dept`, and `salgrade` tables with various types of joins:
+
+**Lab 1: Retrieve Employee Details with Department Names**
+Write a SQL query to retrieve the names of employees along with their department names.
+
+**Lab 2: Retrieve Employee Details with Job Titles**
+Write a SQL query to retrieve the names of employees along with their job titles.
+
+**Lab 3: Retrieve Department Names with Locations**
+Write a SQL query to retrieve department names along with their respective locations.
+
+**Lab 4: Retrieve Employee Names and Salaries with Department Names**
+Write a SQL query to retrieve the names and salaries of employees along with their department names.
+
+**Lab 5: Retrieve Employee Names, Job Titles, and Salary Grades**
+Write a SQL query to retrieve the names of employees, their job titles, and the salary grade they fall into.
+
+**Lab 6: Retrieve Employee Names with Manager Names**
+Write a SQL query to retrieve the names of employees along with the names of their managers.
+
+**Lab 7: Retrieve Employee Names with Commission Amounts**
+Write a SQL query to retrieve the names of employees along with their commission amounts (if any).
+
+**Lab 8: Retrieve Department Names with Average Salaries**
+Write a SQL query to retrieve department names along with the average salary of employees in each department.
+
+**Lab 9: Retrieve Employee Names with Department Names and Locations**
+Write a SQL query to retrieve the names of employees along with their department names and locations.
+
+**Lab 10: Retrieve Employee Names with Job Titles and Salary Ranges**
+Write a SQL query to retrieve the names of employees, their job titles, and the salary range (low salary and high salary) associated with their salary grade.
+
+Each of these lab exercises involves different types of joins (e.g., INNER JOIN, LEFT JOIN) between the `emp`, `dept`, and `salgrade` tables. These exercises should help you practice SQL skills related to retrieving and combining data from multiple tables.
