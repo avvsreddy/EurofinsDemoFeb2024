@@ -48,15 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Labs\Number Puzzle Game-Problem.zip" />
     <None Include="Labs\OO LABS to Participants.zip" />
     <None Include="Labs\PLT_Programs.pdf" />
     <None Include="Labs\SQL_Labs.zip" />
     <None Include="Reference\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Reference\Introduction to dotNET Framework.pdf" />
     <None Include="Reference\Unit 1 - Introduction to Object Oriented Approach.pdf" />
+    <None Include="Training Schedule\SkillAssure - Fresher Induction .NET- Program Design_v1.1 -  Jan 2024 %281%29.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Labs\emp dept salgrade tables.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
