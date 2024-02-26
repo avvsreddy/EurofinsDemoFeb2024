@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HasADemos", "HasADemos\HasA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneToManyHasADemo", "OneToManyHasADemo\OneToManyHasADemo.csproj", "{D3D03D6B-886E-4423-BF34-8ADE5442AA1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainerTraineeApp", "TrainerTraineeApp\TrainerTraineeApp.csproj", "{917ED9BF-8A67-49A7-9DB5-F03DD951F7F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{D3D03D6B-886E-4423-BF34-8ADE5442AA1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D03D6B-886E-4423-BF34-8ADE5442AA1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D03D6B-886E-4423-BF34-8ADE5442AA1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917ED9BF-8A67-49A7-9DB5-F03DD951F7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917ED9BF-8A67-49A7-9DB5-F03DD951F7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917ED9BF-8A67-49A7-9DB5-F03DD951F7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917ED9BF-8A67-49A7-9DB5-F03DD951F7F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
