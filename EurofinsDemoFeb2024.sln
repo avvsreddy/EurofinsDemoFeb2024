@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainerTraineeApp", "Traine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OODemo2", "OODemo2\OODemo2.csproj", "{267DF509-F8D5-45EC-A64C-CBAF537AA292}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdeLab", "IdeLab\IdeLab.csproj", "{494E696F-6EE1-4D11-828A-71DEBEB433A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{267DF509-F8D5-45EC-A64C-CBAF537AA292}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{267DF509-F8D5-45EC-A64C-CBAF537AA292}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{267DF509-F8D5-45EC-A64C-CBAF537AA292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494E696F-6EE1-4D11-828A-71DEBEB433A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494E696F-6EE1-4D11-828A-71DEBEB433A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494E696F-6EE1-4D11-828A-71DEBEB433A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494E696F-6EE1-4D11-828A-71DEBEB433A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
