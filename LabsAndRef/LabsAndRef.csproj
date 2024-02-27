@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Labs\Lab-OOP Exercises.pdf" />
     <None Include="Labs\Number Puzzle Game-Problem.zip" />
     <None Include="Labs\OO LABS to Participants.zip" />
     <None Include="Labs\OO Programming - Company.pdf" />
