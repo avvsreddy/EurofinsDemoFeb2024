@@ -109,7 +109,7 @@ namespace CollectionsDemo
     public class DynamicIntArray
     {
 
-        private int[] data = new int[5];
+        private int[] data = new int[4];
         private int index = 0;
         public int Size
         {
