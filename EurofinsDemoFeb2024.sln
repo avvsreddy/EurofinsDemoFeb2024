@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdeLab", "IdeLab\IdeLab.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryManagementDemo", "MemoryManagementDemo\MemoryManagementDemo.csproj", "{9A0A8DEB-C497-4A30-971E-C1F1DF4305E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsDemo", "CollectionsDemo\CollectionsDemo.csproj", "{BC18C485-79F0-4C22-94DE-8629613047A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{9A0A8DEB-C497-4A30-971E-C1F1DF4305E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A0A8DEB-C497-4A30-971E-C1F1DF4305E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A0A8DEB-C497-4A30-971E-C1F1DF4305E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC18C485-79F0-4C22-94DE-8629613047A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC18C485-79F0-4C22-94DE-8629613047A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC18C485-79F0-4C22-94DE-8629613047A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC18C485-79F0-4C22-94DE-8629613047A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
