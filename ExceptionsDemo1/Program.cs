@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExceptionsDemo1.DataLayer;
+using System;
 
 namespace ExceptionsDemo1
 {
@@ -11,6 +12,7 @@ namespace ExceptionsDemo1
             // only if they are non zero
             // only if they are evens
             // if not throw an appropriate custom exep
+            // store the result into some file
 
 
 
@@ -52,6 +54,7 @@ namespace ExceptionsDemo1
                 catch (NonEvenNumbersException ex)
                 {
                     Console.WriteLine(ex.Message);
+                    //throw ex
                 }
 
                 catch (NonZeroException ex)
@@ -62,9 +65,15 @@ namespace ExceptionsDemo1
                 {
                     Console.WriteLine(ex.Message);
                 }
+
+                catch (UnableToSaveDataException ex)
+                {
+                    Console.WriteLine(ex.InnerException.Message);
+                }
                 catch (Exception ex) // catch all block
                 {
-                    Console.WriteLine(ex.Message);
+                    //Console.WriteLine(ex.Message);
+                    Console.WriteLine("Something went worng, please try later");
 
                 }
 
@@ -77,86 +86,6 @@ namespace ExceptionsDemo1
                 }
 
             }
-
-        }
-    }
-
-    // single line comments
-    /*
-     * multi line comments 
-     */
-
-
-    // document comments /  xml comments
-
-
-
-    // business layer code
-
-
-
-    /// <summary>
-    /// Use this calculator for finding a sum of two numbers
-    /// </summary>
-    public class Calculator
-    {
-        /// <summary>
-        /// Finds a sum of two positive non zero even numbers
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
-        /// <exception cref="NonZeroException"></exception>
-        /// <exception cref="NonPositiveNumberException"></exception>
-        /// <exception cref="NonEvenNumbersException"></exception>
-        public int Sum(int a, int b)
-        {
-            // non-zero validation
-            if (a == 0 || b == 0)
-            {
-                //Console.WriteLine();
-                string msg = "enter only non-zero numbers only";
-                //return msg;
-                //Console.WriteLine(msg);
-                throw new NonZeroException(msg);
-            }
-
-            // +ve validation
-            if (a < 0 || b < 0)
-            {
-                throw new NonPositiveNumberException("Enter only positive numbers only");
-            }
-
-            // even numbers validation
-            if (a % 2 != 0 || b % 2 != 0)
-            {
-                throw new NonEvenNumbersException("Enter only even numbers only");
-            }
-
-
-
-            return a + b;
-        }
-    }
-
-
-    public class NonZeroException : ApplicationException
-    {
-        public NonZeroException(string msg) : base(msg)
-        {
-            //Message = msg;
-        }
-    }
-
-    public class NonPositiveNumberException : ApplicationException
-    {
-        public NonPositiveNumberException(string msg) : base(msg) { }
-    }
-
-    public class NonEvenNumbersException : ApplicationException
-    {
-        public NonEvenNumbersException(string msg) : base(msg)
-        {
 
         }
     }

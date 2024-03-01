@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFCCC4A0-F5DC-443D-BD23-14C76586ED62}</ProjectGuid>
+    <ProjectGuid>{03BCC0CB-147A-4594-8DCA-EE922FF6172A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ExceptionsDemo1</RootNamespace>
-    <AssemblyName>ExceptionsDemo1</AssemblyName>
+    <RootNamespace>ExceptionsDemo2</RootNamespace>
+    <AssemblyName>ExceptionsDemo2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\Calculator.cs" />
-    <Compile Include="Business\NonEvenNumbersException.cs" />
-    <Compile Include="Business\NonPositiveNumberException.cs" />
-    <Compile Include="Business\NonZeroException.cs" />
-    <Compile Include="DataLayer\CalclatorRepository.cs" />
-    <Compile Include="DataLayer\UnableToSaveDataException.cs" />
+    <Compile Include="Account.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
