@@ -55,5 +55,14 @@
 
         }
 
+        public void Close(int accNo, int pin)
+        {
+            // valid accno
+            // valid pin
+            // balance must be zero
+            // should be active account
+
+        }
+
     }
 }

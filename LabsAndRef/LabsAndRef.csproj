@@ -48,10 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Labs\10 - Lab - Exceptions.pdf" />
     <None Include="Labs\Collections Lab - Advanced.pdf" />
     <None Include="Labs\Collections Lab 2.pdf" />
     <None Include="Labs\Collections&amp;Generics_Assignment_1.docx" />
     <None Include="Labs\Lab-OOP Exercises.pdf" />
+    <None Include="Labs\Mastering Exceptions Practice Lab.pdf" />
     <None Include="Labs\Number Puzzle Game-Problem.zip" />
     <None Include="Labs\OO LABS to Participants.zip" />
     <None Include="Labs\OO Programming - Company.pdf" />
@@ -62,6 +64,7 @@
     <None Include="Reference\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Reference\Collections and Generics.pdf" />
     <None Include="Reference\Database Fundamentals - Venkat.pdf" />
+    <None Include="Reference\Exception Handling - Ref.pdf" />
     <None Include="Reference\Introduction to DBMS.pptx" />
     <None Include="Reference\Introduction to dotNET Framework.pdf" />
     <None Include="Reference\Introduction to OO Programming - Venkat.pdf" />
