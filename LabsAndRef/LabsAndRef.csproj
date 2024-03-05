@@ -62,6 +62,7 @@
     <None Include="Labs\PLT_Programs.pdf" />
     <None Include="Labs\Simply Me - Bootstrap Practice.pdf" />
     <None Include="Labs\Hospital Management System-OO Programming.pdf" />
+    <None Include="Labs\Spell Checker - Multi Threading Case Study.pdf" />
     <None Include="Labs\SQL_Labs.zip" />
     <None Include="Reference\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Reference\Collections and Generics.pdf" />
@@ -70,6 +71,7 @@
     <None Include="Reference\Introduction to DBMS.pptx" />
     <None Include="Reference\Introduction to dotNET Framework.pdf" />
     <None Include="Reference\Introduction to OO Programming - Venkat.pdf" />
+    <None Include="Reference\Multithreading.pdf" />
     <None Include="Reference\OODesignExercise1-Venkat.pdf" />
     <None Include="Reference\Unit 1 - Introduction to Object Oriented Approach.pdf" />
     <None Include="Reference\Unit 3 - Thinking in Objects.pdf" />
@@ -82,6 +84,8 @@
     <Content Include="Labs\04-MembershipApp.jpg" />
     <Content Include="Labs\emp dept salgrade tables.txt" />
     <Content Include="Labs\ide-language-oolab.txt" />
+    <Content Include="Labs\Multi Threading Lab 1.txt" />
+    <Content Include="Labs\SpellCheckerDesign.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
