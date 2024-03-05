@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -14,32 +15,39 @@ namespace WindowsFormsApp1
 
         private void DrawRedRectangles(object sender, EventArgs e)
         {
-            // red rect
-            Graphics g = panel1.CreateGraphics();
-            Random rnd = new Random();
 
-            for (int i = 1; i <= 1000; i++)
+            new Thread(() =>
             {
-                int x = rnd.Next(panel1.Height);
-                int y = rnd.Next(panel1.Width);
-                g.DrawRectangle(Pens.Red, x, y, 20, 20);
-                Thread.Sleep(100);
-            }
+                // red rect
+                Graphics g = panel1.CreateGraphics();
+                Random rnd = new Random();
+
+                for (int i = 1; i <= 1000; i++)
+                {
+                    int x = rnd.Next(panel1.Height);
+                    int y = rnd.Next(panel1.Width);
+                    g.DrawRectangle(Pens.Red, x, y, 20, 20);
+                    Thread.Sleep(100);
+                }
+            }).Start();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // blue rect
-            Graphics g = panel2.CreateGraphics();
-            Random rnd = new Random();
-
-            for (int i = 1; i <= 1000; i++)
+            new Task(() =>
             {
-                int x = rnd.Next(panel2.Height);
-                int y = rnd.Next(panel2.Width);
-                g.DrawRectangle(Pens.Blue, x, y, 20, 20);
-                Thread.Sleep(100);
-            }
+                // blue rect
+                Graphics g = panel2.CreateGraphics();
+                Random rnd = new Random();
+
+                for (int i = 1; i <= 1000; i++)
+                {
+                    int x = rnd.Next(panel2.Height);
+                    int y = rnd.Next(panel2.Width);
+                    g.DrawRectangle(Pens.Blue, x, y, 20, 20);
+                    Thread.Sleep(100);
+                }
+            }).Start();
         }
     }
 }
