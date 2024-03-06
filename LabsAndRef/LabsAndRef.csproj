@@ -67,6 +67,7 @@
     <None Include="Reference\C# Programming Ref Notes and Labs- Venkat.pdf" />
     <None Include="Reference\Collections and Generics.pdf" />
     <None Include="Reference\Database Fundamentals - Venkat.pdf" />
+    <None Include="Reference\Effective Unit Testing.pdf" />
     <None Include="Reference\Exception Handling - Ref.pdf" />
     <None Include="Reference\Introduction to DBMS.pptx" />
     <None Include="Reference\Introduction to dotNET Framework.pdf" />
@@ -82,6 +83,7 @@
     <Content Include="Labs\02-CompanyOrders.jpg" />
     <Content Include="Labs\03-SkillAssure.jpg" />
     <Content Include="Labs\04-MembershipApp.jpg" />
+    <Content Include="Labs\BankAppProblem-UnitTest.txt" />
     <Content Include="Labs\emp dept salgrade tables.txt" />
     <Content Include="Labs\ide-language-oolab.txt" />
     <Content Include="Labs\Multi Threading Lab 1.txt" />
