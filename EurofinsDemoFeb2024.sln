@@ -105,6 +105,43 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design Patterns Demo", "Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSSystem", "POSSystem\POSSystem.csproj", "{E23AC56D-524C-442A-BBBF-5F1EB6482681}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI Case Study", "AI Case Study", "{B0BFEFBE-1D44-4E4F-A2AA-958FB3B29EC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pearson Engine", "Pearson Engine", "{D5F3EF81-C4E8-4211-A8DC-CC85E674B8D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Loader", "Data Loader", "{4A0F055D-0598-4891-A309-37BE65D8CDCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Aggrigator", "Data Aggrigator", "{35520D71-A20B-4CF2-B754-5E8AE2E87003}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI Client", "AI Client", "{ACC316DB-EE55-44EC-9B92-1AE0B47E8AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.UIClient", "AIRecommender.UIClient\AIRecommender.UIClient.csproj", "{AA25E53C-0968-4CA5-A2D7-0E3C5D9A736E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.DataAggrigator", "AIRecommender.DataAggrigator\AIRecommender.DataAggrigator.csproj", "{6B301CF3-D1F2-4821-8DED-D626B66FA980}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.DataLoader", "AIRecommender.DataLoader\AIRecommender.DataLoader.csproj", "{8E99D2F9-0119-4CCD-A718-03E3CEF07B0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.CoreEngine", "AIRecommender.CoreEngine\AIRecommender.CoreEngine.csproj", "{DAF94A24-2070-4B7E-B201-B01166848907}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6A8031C3-3507-4E9A-AF9A-65F7EAC5A461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.Entities", "AIRecommender.Entities\AIRecommender.Entities.csproj", "{0737DC33-F105-4A49-9E38-09BB258CD7A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.CoreEngine.UnitTests", "AIRecommender.CoreEngine.UnitTests\AIRecommender.CoreEngine.UnitTests.csproj", "{B702D3E2-F71C-426A-9C9E-5738497AA4F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{14DD51B9-5559-4C55-B890-5EB31000EBD6}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Recommendation Engine - Pearson - Venkat.pdf = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Recommendation Engine - Pearson - Venkat.pdf
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 2 - Data Loader.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 2 - Data Loader.jpg
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 3 - Aggregator.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 3 - Aggregator.jpg
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 4 - Recommendation Engine.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 4 - Recommendation Engine.jpg
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 5 - Data Cache.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 5 - Data Cache.jpg
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step1-RecommenerEngine.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step1-RecommenerEngine.jpg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.Documents", "AIRecommender.Documents\AIRecommender.Documents.csproj", "{2E853E13-2C32-44B0-9AD6-61FC1CFCA241}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -251,6 +288,34 @@ Global
 		{E23AC56D-524C-442A-BBBF-5F1EB6482681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E23AC56D-524C-442A-BBBF-5F1EB6482681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E23AC56D-524C-442A-BBBF-5F1EB6482681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA25E53C-0968-4CA5-A2D7-0E3C5D9A736E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA25E53C-0968-4CA5-A2D7-0E3C5D9A736E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA25E53C-0968-4CA5-A2D7-0E3C5D9A736E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA25E53C-0968-4CA5-A2D7-0E3C5D9A736E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B301CF3-D1F2-4821-8DED-D626B66FA980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B301CF3-D1F2-4821-8DED-D626B66FA980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B301CF3-D1F2-4821-8DED-D626B66FA980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B301CF3-D1F2-4821-8DED-D626B66FA980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E99D2F9-0119-4CCD-A718-03E3CEF07B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E99D2F9-0119-4CCD-A718-03E3CEF07B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E99D2F9-0119-4CCD-A718-03E3CEF07B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E99D2F9-0119-4CCD-A718-03E3CEF07B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF94A24-2070-4B7E-B201-B01166848907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF94A24-2070-4B7E-B201-B01166848907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF94A24-2070-4B7E-B201-B01166848907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF94A24-2070-4B7E-B201-B01166848907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0737DC33-F105-4A49-9E38-09BB258CD7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0737DC33-F105-4A49-9E38-09BB258CD7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0737DC33-F105-4A49-9E38-09BB258CD7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0737DC33-F105-4A49-9E38-09BB258CD7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B702D3E2-F71C-426A-9C9E-5738497AA4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B702D3E2-F71C-426A-9C9E-5738497AA4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B702D3E2-F71C-426A-9C9E-5738497AA4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B702D3E2-F71C-426A-9C9E-5738497AA4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E853E13-2C32-44B0-9AD6-61FC1CFCA241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E853E13-2C32-44B0-9AD6-61FC1CFCA241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E853E13-2C32-44B0-9AD6-61FC1CFCA241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E853E13-2C32-44B0-9AD6-61FC1CFCA241}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -295,6 +360,19 @@ Global
 		{3AF3656E-8032-4694-8466-1CBB4A9E8F93} = {9380360B-70F5-4E37-8E39-395851788381}
 		{4F5FD671-2967-40DB-A151-C67CA36025DF} = {9380360B-70F5-4E37-8E39-395851788381}
 		{E23AC56D-524C-442A-BBBF-5F1EB6482681} = {01031BA4-01AF-4254-A247-90E301C5E895}
+		{D5F3EF81-C4E8-4211-A8DC-CC85E674B8D4} = {B0BFEFBE-1D44-4E4F-A2AA-958FB3B29EC2}
+		{4A0F055D-0598-4891-A309-37BE65D8CDCC} = {B0BFEFBE-1D44-4E4F-A2AA-958FB3B29EC2}
+		{35520D71-A20B-4CF2-B754-5E8AE2E87003} = {B0BFEFBE-1D44-4E4F-A2AA-958FB3B29EC2}
+		{ACC316DB-EE55-44EC-9B92-1AE0B47E8AF8} = {B0BFEFBE-1D44-4E4F-A2AA-958FB3B29EC2}
+		{AA25E53C-0968-4CA5-A2D7-0E3C5D9A736E} = {ACC316DB-EE55-44EC-9B92-1AE0B47E8AF8}
+		{6B301CF3-D1F2-4821-8DED-D626B66FA980} = {35520D71-A20B-4CF2-B754-5E8AE2E87003}
+		{8E99D2F9-0119-4CCD-A718-03E3CEF07B0A} = {4A0F055D-0598-4891-A309-37BE65D8CDCC}
+		{DAF94A24-2070-4B7E-B201-B01166848907} = {D5F3EF81-C4E8-4211-A8DC-CC85E674B8D4}
+		{6A8031C3-3507-4E9A-AF9A-65F7EAC5A461} = {B0BFEFBE-1D44-4E4F-A2AA-958FB3B29EC2}
+		{0737DC33-F105-4A49-9E38-09BB258CD7A7} = {6A8031C3-3507-4E9A-AF9A-65F7EAC5A461}
+		{B702D3E2-F71C-426A-9C9E-5738497AA4F8} = {D5F3EF81-C4E8-4211-A8DC-CC85E674B8D4}
+		{14DD51B9-5559-4C55-B890-5EB31000EBD6} = {B0BFEFBE-1D44-4E4F-A2AA-958FB3B29EC2}
+		{2E853E13-2C32-44B0-9AD6-61FC1CFCA241} = {14DD51B9-5559-4C55-B890-5EB31000EBD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C13A543-40EC-45BE-A66A-2135669D4278}
