@@ -131,6 +131,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.CoreEngine.Un
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{14DD51B9-5559-4C55-B890-5EB31000EBD6}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Case Study\AI Case Study\BX-CSV-Dump.zip = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Case Study\AI Case Study\BX-CSV-Dump.zip
 		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Recommendation Engine - Pearson - Venkat.pdf = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Recommendation Engine - Pearson - Venkat.pdf
 		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg
 		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 2 - Data Loader.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 2 - Data Loader.jpg
