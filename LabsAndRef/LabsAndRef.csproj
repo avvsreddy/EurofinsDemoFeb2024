@@ -49,6 +49,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Labs\10 - Lab - Exceptions.pdf" />
+    <None Include="Labs\AI Case study\Recommendation Engine - Pearson - Venkat.pdf" />
     <None Include="Labs\Collections Lab - Advanced.pdf" />
     <None Include="Labs\Collections Lab 2.pdf" />
     <None Include="Labs\Collections&amp;Generics_Assignment_1.docx" />
