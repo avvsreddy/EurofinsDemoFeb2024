@@ -130,16 +130,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.CoreEngine.UnitTests", "AIRecommender.CoreEngine.UnitTests\AIRecommender.CoreEngine.UnitTests.csproj", "{B702D3E2-F71C-426A-9C9E-5738497AA4F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{14DD51B9-5559-4C55-B890-5EB31000EBD6}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Case Study\AI Case Study\BX-CSV-Dump.zip = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Case Study\AI Case Study\BX-CSV-Dump.zip
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Recommendation Engine - Pearson - Venkat.pdf = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Recommendation Engine - Pearson - Venkat.pdf
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 1 - Recommender.jpg
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 2 - Data Loader.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 2 - Data Loader.jpg
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 3 - Aggregator.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 3 - Aggregator.jpg
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 4 - Recommendation Engine.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 4 - Recommendation Engine.jpg
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 5 - Data Cache.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step 5 - Data Cache.jpg
-		..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step1-RecommenerEngine.jpg = ..\..\Training Materials 2020\OneDrive_1_10-31-2020\S\AI Recommandation Engine - Case Study\AI Recommandation Engine - Case Study\Step1-RecommenerEngine.jpg
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIRecommender.Documents", "AIRecommender.Documents\AIRecommender.Documents.csproj", "{2E853E13-2C32-44B0-9AD6-61FC1CFCA241}"
 EndProject
