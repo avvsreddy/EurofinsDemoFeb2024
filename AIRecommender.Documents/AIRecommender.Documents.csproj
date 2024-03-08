@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Documents\BX-CSV-Dump.zip" />
     <None Include="Documents\Recommendation Engine - Pearson - Venkat.pdf" />
   </ItemGroup>
   <ItemGroup>
