@@ -48,6 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Documents\Recommendation Engine - Pearson - Venkat.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documents\Step 1 - Recommender.jpg" />
+    <Content Include="Documents\Step 2 - Data Loader.jpg" />
+    <Content Include="Documents\Step 3 - Aggregator.jpg" />
+    <Content Include="Documents\Step 4 - Recommendation Engine.jpg" />
+    <Content Include="Documents\Step 5 - Data Cache.jpg" />
+    <Content Include="Documents\Step1-RecommenerEngine.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
