@@ -139,6 +139,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Programming with A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsManagement.ConsoleApp", "StudentsManagement.ConsoleApp\StudentsManagement.ConsoleApp.csproj", "{A4A7C7C9-ACC2-4EBA-B98F-95022868D651}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsManagementWindowsFormsApp", "StudentsManagementWindowsFormsApp\StudentsManagementWindowsFormsApp.csproj", "{C30BD112-3BD8-4BF9-882A-5BC46DDF6F28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -321,6 +323,10 @@ Global
 		{A4A7C7C9-ACC2-4EBA-B98F-95022868D651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A7C7C9-ACC2-4EBA-B98F-95022868D651}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A7C7C9-ACC2-4EBA-B98F-95022868D651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30BD112-3BD8-4BF9-882A-5BC46DDF6F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30BD112-3BD8-4BF9-882A-5BC46DDF6F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30BD112-3BD8-4BF9-882A-5BC46DDF6F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30BD112-3BD8-4BF9-882A-5BC46DDF6F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -380,6 +386,7 @@ Global
 		{2E853E13-2C32-44B0-9AD6-61FC1CFCA241} = {14DD51B9-5559-4C55-B890-5EB31000EBD6}
 		{D807E4A3-8D72-4CBF-8491-B76CE1919AAD} = {C3FCB270-C75B-42E0-BBCB-05FDE469C08B}
 		{A4A7C7C9-ACC2-4EBA-B98F-95022868D651} = {CC520656-D09A-43E8-B3EA-02DDC93A211F}
+		{C30BD112-3BD8-4BF9-882A-5BC46DDF6F28} = {CC520656-D09A-43E8-B3EA-02DDC93A211F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C13A543-40EC-45BE-A66A-2135669D4278}
