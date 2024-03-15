@@ -157,6 +157,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqToObjects", "LinqToObje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqDemo5", "LinqDemo5\LinqDemo5.csproj", "{E1F1869C-51BF-45A4-A60D-0E7BCBAACFBB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Programming with EF", "Database Programming with EF", "{6131E1BD-2F51-4C90-ABF6-A62EB81C9D63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsCatalogManagementApp", "ProductsCatalogManagementApp\ProductsCatalogManagementApp.csproj", "{4FB85D9C-EF65-4E74-8BDB-E2B424A29E26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -371,6 +375,10 @@ Global
 		{E1F1869C-51BF-45A4-A60D-0E7BCBAACFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1F1869C-51BF-45A4-A60D-0E7BCBAACFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1F1869C-51BF-45A4-A60D-0E7BCBAACFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB85D9C-EF65-4E74-8BDB-E2B424A29E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB85D9C-EF65-4E74-8BDB-E2B424A29E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB85D9C-EF65-4E74-8BDB-E2B424A29E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB85D9C-EF65-4E74-8BDB-E2B424A29E26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -438,6 +446,7 @@ Global
 		{4A75D890-31DB-42F7-9712-2ADD89DBE9BE} = {8557702D-C8F6-4E21-8705-7FE89F50E7C5}
 		{59B741BF-9BF0-48DE-8566-0DD84F244C26} = {8557702D-C8F6-4E21-8705-7FE89F50E7C5}
 		{E1F1869C-51BF-45A4-A60D-0E7BCBAACFBB} = {8557702D-C8F6-4E21-8705-7FE89F50E7C5}
+		{4FB85D9C-EF65-4E74-8BDB-E2B424A29E26} = {6131E1BD-2F51-4C90-ABF6-A62EB81C9D63}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C13A543-40EC-45BE-A66A-2135669D4278}
