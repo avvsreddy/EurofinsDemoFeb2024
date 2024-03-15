@@ -53,7 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\IProductsRepository.cs" />
     <Compile Include="DataAccess\ProductsDbContext.cs" />
+    <Compile Include="DataAccess\ProductsRepository.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

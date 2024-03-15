@@ -21,6 +21,17 @@ namespace ProductsCatalogManagementApp
 
             // GEt all products and display
 
+            // edit in disconnected approach
+            ProductsDbContext db1 = new ProductsDbContext();
+            var productToEdit1 = db1.Products.Find(2);
+
+
+            ProductsDbContext db2 = new ProductsDbContext();
+            db2.Database.Log = Console.WriteLine;
+            productToEdit1.Name = "IPhone 15 Pro Max - modified";
+            db2.Entry(productToEdit1).State = System.Data.Entity.EntityState.Modified;
+            db2.SaveChanges();
+
 
         }
 
