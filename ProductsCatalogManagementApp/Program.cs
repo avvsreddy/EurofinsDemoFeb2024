@@ -9,18 +9,81 @@ namespace ProductsCatalogManagementApp
     {
         static void Main(string[] args)
         {
-            // PBI/User Story: As a user, I want to Save Product data into database, so that i can use it later
-            // Task 1: Framework : EF - done
-            // Task 2: Approach - Code First / DB First - done
-            // Task 3: Setup/Install EF - done
-            // Task 4: Create Entity Classess - done
-            // Task 5: Configure EF - done
-            // Task 6: Map Class to Table - done 
-            // Task 7: Create Repository
-            // Task 8: Create UI
+            // get all customers
+            ProductsDbContext db = new ProductsDbContext();
+            db.Database.Log = Console.WriteLine;
+            var allCustomers = db.People.OfType<Customer>().ToList();
 
-            // GEt all products and display
 
+
+
+        }
+
+        private static void CustAndSupAdd()
+        {
+            // add one customer and one supplier
+            ProductsDbContext db = new ProductsDbContext();
+            db.Database.Log = Console.WriteLine;
+
+            Customer c = new Customer { CustType = "Gold", Discount = 12, Email = "cust1@shop.com", Location = "Bangalore", Mobile = "43423424", Name = "Customer 1" };
+
+            Supplier s = new Supplier { Email = "sup1@abc.com", GST = "A2343", Location = "Bangalore", Mobile = "324234", Name = "Suppler 1", TradeLic = "Tx345r2" };
+
+            db.People.Add(c);
+            db.People.Add(s);
+            db.SaveChanges();
+        }
+
+        private static void LazyNEgarLoading()
+        {
+            ProductsDbContext db = new ProductsDbContext();
+            db.Database.Log = Console.WriteLine;
+            // Select all prducts then display prodcut name and category name
+            var allProducts = from p in db.Products //.Include("Category") // eagar loading
+                              select p;
+
+            foreach (var item in allProducts)
+            {
+                Console.WriteLine($"{item.Name}\t{item.Category.Name}");
+            }
+        }
+
+        private static void InsertAndUpdate()
+        {
+            ProductsDbContext db = new ProductsDbContext();
+            db.Database.Log = Console.WriteLine;
+            // Add new category with existing products
+            Category c = new Category() { Name = "Mobiles" };
+
+            var p2 = db.Products.Find(2);
+            var p3 = db.Products.Find(3);
+            var p4 = db.Products.Find(4);
+
+            p2.Category = c;
+            p3.Category = c;
+            p4.Category = c;
+
+            db.Categories.Add(c);
+            db.SaveChanges();
+
+            Console.WriteLine("done");
+        }
+
+        private static void NewProductWithNewCategory(ProductsDbContext db1)
+        {
+            // Add a new product with new category
+
+            Category cat = new Category { Name = "Laptops" };
+
+            Product p = new Product { Name = "Dell XPS 13", Brand = "Dell", Country = "India", InStock = true, Price = 90000, Category = cat };
+
+            db1.Products.Add(p);
+            //db1.Categories.Add(cat);
+            db1.SaveChanges();
+        }
+
+        private static void EditInDisconnected()
+        {
             // edit in disconnected approach
             ProductsDbContext db1 = new ProductsDbContext();
             var productToEdit1 = db1.Products.Find(2);
@@ -28,11 +91,9 @@ namespace ProductsCatalogManagementApp
 
             ProductsDbContext db2 = new ProductsDbContext();
             db2.Database.Log = Console.WriteLine;
-            productToEdit1.Name = "IPhone 15 Pro Max - modified";
+            productToEdit1.Name = "IPhone 15 Pro Max -  again modified";
             db2.Entry(productToEdit1).State = System.Data.Entity.EntityState.Modified;
             db2.SaveChanges();
-
-
         }
 
         private static void Edit()

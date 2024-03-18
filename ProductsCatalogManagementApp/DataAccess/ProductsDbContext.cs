@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace ProductsCatalogManagementApp.DataAccess
 {
-    public class ProductsDbContext : DbContext
+    internal class ProductsDbContext : DbContext
     {
         // Configure-Map the Database
         public ProductsDbContext() : base("defaultConnection")
@@ -15,6 +15,12 @@ namespace ProductsCatalogManagementApp.DataAccess
         // Configure-Map the Entities - Tables
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        //public DbSet<Supplier> Suppliers { get; set; }
+
+        //public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<Person> People { get; set; }
 
     }
 }

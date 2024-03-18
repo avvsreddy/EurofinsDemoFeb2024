@@ -5,6 +5,8 @@ namespace ProductsCatalogManagementApp.DataAccess
 {
     public interface IProductsRepository
     {
+
+
         void Create(Product product);
         void Delete(int id);
         void Edit(Product product);

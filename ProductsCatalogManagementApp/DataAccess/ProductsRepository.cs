@@ -1,6 +1,6 @@
 ﻿using ProductsCatalogManagementApp.Entities;
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ProductsCatalogManagementApp.DataAccess
 {
@@ -9,42 +9,48 @@ namespace ProductsCatalogManagementApp.DataAccess
         private ProductsDbContext db = new ProductsDbContext();
         public void Create(Product product)
         {
-            throw new NotImplementedException();
+            db.Products.Add(product);
+            db.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            db.Products.Remove(db.Products.Find(id));
+            db.SaveChanges();
         }
 
         public void Edit(Product product)
         {
-            throw new NotImplementedException();
+            db.Entry(product).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
         }
 
         public List<Product> GetAll()
         {
-            throw new NotImplementedException();
+            return db.Products.ToList();
         }
 
         public Product GetById(int id)
         {
-            throw new NotImplementedException();
+            return db.Products.Find(id);
         }
 
         public Product GetCheapestProduct()
         {
-            throw new NotImplementedException();
+            var product = (from p in db.Products
+                           orderby p.Price
+                           select p).FirstOrDefault();
+            return product;
         }
 
         public Product GetCostliestProduct()
         {
-            throw new NotImplementedException();
+            return db.Products.OrderByDescending(p => p.Price).FirstOrDefault();
         }
 
         public int GetProductCount()
         {
-            throw new NotImplementedException();
+            return db.Products.Count();
         }
     }
 }
