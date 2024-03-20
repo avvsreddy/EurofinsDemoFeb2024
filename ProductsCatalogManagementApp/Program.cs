@@ -9,12 +9,20 @@ namespace ProductsCatalogManagementApp
     {
         static void Main(string[] args)
         {
-            // get all customers
+            // get all categories
             ProductsDbContext db = new ProductsDbContext();
             db.Database.Log = Console.WriteLine;
-            var allCustomers = db.People.OfType<Customer>().ToList();
+            // increase all products price with 1000 Rs.
 
+            //var allProducts = db.Products.ToList();
+            //foreach (var item in allProducts)
+            //{
+            //    item.Price += 1000;
+            //}
+            //db.SaveChanges();
+            //Console.WriteLine("done");
 
+            db.Database.ExecuteSqlCommand("update products set price = price + 1");
 
 
         }

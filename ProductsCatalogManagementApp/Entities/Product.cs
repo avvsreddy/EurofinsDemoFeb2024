@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProductsCatalogManagementApp.Entities
 {
@@ -37,7 +38,7 @@ namespace ProductsCatalogManagementApp.Entities
 
         public virtual List<Product> Products { get; set; } = new List<Product>();
     }
-
+    //[Table("Suppliers")] // TPT
     public class Supplier : Person
     {
         //public int SupplierID { get; set; }
@@ -54,10 +55,21 @@ namespace ProductsCatalogManagementApp.Entities
         public string Mobile { get; set; }
         public string Location { get; set; }
     }
-
+    //[Table("Customers")] // TPT
     class Customer : Person
     {
         public int Discount { get; set; }
         public string CustType { get; set; }
+        public Address Address { get; set; }
+    }
+
+    [ComplexType]
+    class Address
+    {
+        // dont provide ID property
+        public string Line1 { get; set; }
+        public string Line2 { get; set; }
+        public string City { get; set; }
+        public string Pincode { get; set; }
     }
 }

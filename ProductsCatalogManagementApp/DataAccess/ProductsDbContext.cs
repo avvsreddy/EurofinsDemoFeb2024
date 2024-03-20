@@ -20,7 +20,27 @@ namespace ProductsCatalogManagementApp.DataAccess
 
         //public DbSet<Customer> Customers { get; set; }
 
-        public DbSet<Person> People { get; set; }
+        public DbSet<Person> People { get; set; } // TPH
 
+        // To configure TPC 
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            // TPC configuration
+
+            modelBuilder.Entity<Customer>().Map(e => e.MapInheritedProperties());
+            modelBuilder.Entity<Customer>().ToTable("Customers");
+
+            modelBuilder.Entity<Supplier>().Map(e => e.MapInheritedProperties());
+            modelBuilder.Entity<Supplier>().ToTable("Suppliers");
+
+            // Map to Stored Procedures
+
+            //modelBuilder.Entity<Product>().MapToStoredProcedures();
+
+            modelBuilder.Types().Configure(t => t.MapToStoredProcedures());
+
+
+        }
     }
 }

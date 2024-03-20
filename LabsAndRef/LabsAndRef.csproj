@@ -54,6 +54,8 @@
     <None Include="Labs\Collections Lab 2.pdf" />
     <None Include="Labs\Collections&amp;Generics_Assignment_1.docx" />
     <None Include="Labs\Entity Framework Hands on Labs %28updated%29 - SellPhones.pdf" />
+    <None Include="Labs\Hackathon\Banking Application Approach Document.pdf" />
+    <None Include="Labs\Hackathon\Banking Application Requirement Document.pdf" />
     <None Include="Labs\Lab exercises - Delegates and Events.pdf" />
     <None Include="Labs\Lab-OOP Exercises.pdf" />
     <None Include="Labs\Large Data Processing Case Study.pdf" />
@@ -77,6 +79,7 @@
     <None Include="Reference\Database Fundamentals - Venkat.pdf" />
     <None Include="Reference\Design Case Study - FootBall Game - Venkat.pdf" />
     <None Include="Reference\Design Patterns for Dummies.pdf" />
+    <None Include="Reference\EF Ref.zip" />
     <None Include="Reference\Effective Unit Testing.pdf" />
     <None Include="Reference\Exception Handling - Ref.pdf" />
     <None Include="Reference\Head First Design Patterns.pdf" />
