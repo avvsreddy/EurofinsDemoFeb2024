@@ -1,0 +1,31 @@
+﻿
+@model List<KnowledgeHubPortal.WebApplication.Models.Domain.Entities.Category>
+
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Category List (@Model.Count)</h2>
+
+<table>
+    <tr>
+        <td>Category ID</td>
+        <td>Name</td>
+        <td>Description</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+
+    <tr>
+        <td>@item.CategoryID</td>
+        <td>@item.CategoryName</td>
+        <td>@item.CategoryDescription</td>
+    </tr>
+    }
+
+</table>
+

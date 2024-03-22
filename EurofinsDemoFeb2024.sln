@@ -167,6 +167,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.Net MVC Demos", "ASP.Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldWebApplication", "HelloWorldWebApplication\HelloWorldWebApplication.csproj", "{8F62736E-1D25-452D-939A-52C85A794271}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeHubPortal.WebApplication", "KnowledgeHubPorlat.WebApplication\KnowledgeHubPortal.WebApplication.csproj", "{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -393,6 +395,10 @@ Global
 		{8F62736E-1D25-452D-939A-52C85A794271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F62736E-1D25-452D-939A-52C85A794271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F62736E-1D25-452D-939A-52C85A794271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -463,6 +469,7 @@ Global
 		{4FB85D9C-EF65-4E74-8BDB-E2B424A29E26} = {6131E1BD-2F51-4C90-ABF6-A62EB81C9D63}
 		{E688FAA8-1DF7-4647-8073-7DBF8ACFD84B} = {6131E1BD-2F51-4C90-ABF6-A62EB81C9D63}
 		{8F62736E-1D25-452D-939A-52C85A794271} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
+		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C13A543-40EC-45BE-A66A-2135669D4278}
