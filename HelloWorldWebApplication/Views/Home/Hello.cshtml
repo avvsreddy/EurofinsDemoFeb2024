@@ -1,0 +1,28 @@
+﻿
+
+@for (int i = 1; i <= 10; i++)
+{
+<h1>
+    @ViewBag.Message
+
+</h1>
+}
+
+<h3>Display Multiplicaton table of no. 5</h3>
+<table class="table table-bordered">
+    @for (int i = 1; i <= 10; i++)
+    {
+    <tr>
+        <td>5</td>
+        <td>*</td>
+        <td>@i</td>
+        <td>=</td>
+        @{ 
+            var result = 5 * i;
+        }
+        <td>@result</td>
+    </tr>
+    }
+</table>
+
+
