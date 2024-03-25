@@ -169,6 +169,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldWebApplication", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeHubPortal.WebApplication", "KnowledgeHubPorlat.WebApplication\KnowledgeHubPortal.WebApplication.csproj", "{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagementWebApplication", "ContactManagementWebApplication\ContactManagementWebApplication.csproj", "{88310E67-AF71-48FE-94BF-35513935CCA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -399,6 +401,10 @@ Global
 		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88310E67-AF71-48FE-94BF-35513935CCA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88310E67-AF71-48FE-94BF-35513935CCA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88310E67-AF71-48FE-94BF-35513935CCA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88310E67-AF71-48FE-94BF-35513935CCA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -470,6 +476,7 @@ Global
 		{E688FAA8-1DF7-4647-8073-7DBF8ACFD84B} = {6131E1BD-2F51-4C90-ABF6-A62EB81C9D63}
 		{8F62736E-1D25-452D-939A-52C85A794271} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
 		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
+		{88310E67-AF71-48FE-94BF-35513935CCA8} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C13A543-40EC-45BE-A66A-2135669D4278}

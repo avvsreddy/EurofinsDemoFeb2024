@@ -37,30 +37,42 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
         public ActionResult Create()
         {
             // return a view for collecting category info from the user
-            return View();
+            return View(new Category());
         }
 
         [HttpPost]
-        public ActionResult Create(Category category)
+        public ActionResult CreateOrUpdate(Category category)
         {
             // Validate the input data
             if (!ModelState.IsValid)
             {
-                return View();
+                return View(new Category());
             }
             // if its invalid - send the form with error message
             // if its valid - send the data to back end for saving
 
-            dbContext.Categories.Add(category);
+
+
+            if (category.CategoryID == 0) //new category
+            {
+                dbContext.Categories.Add(category);
+                TempData["Message"] = $"{category.CategoryName} is successfully created!";
+            }
+            else // existing category - need to modify
+            {
+                dbContext.Entry(category).State = System.Data.Entity.EntityState.Modified;
+                TempData["Message"] = $"{category.CategoryName} is successfully modified!";
+            }
+
             dbContext.SaveChanges();
 
             //var categories = dbContext.Categories.ToList();
 
             // return a view
             //return View("Index",categories);
-            string msg = $"{category.CategoryName} is successfully created!";
+
             //ViewBag.Message = msg;
-            TempData["Message"] = msg;
+
             return RedirectToAction("Index");
         }
 
@@ -104,29 +116,29 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpPost]
-        public ActionResult Edit(Category category)
-        {
-            // Validate the input data
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-            // if its invalid - send the form with error message
-            // if its valid - send the data to back end for saving
+        //[HttpPost]
+        //public ActionResult Edit(Category category)
+        //{
+        //    // Validate the input data
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return View();
+        //    }
+        //    // if its invalid - send the form with error message
+        //    // if its valid - send the data to back end for saving
 
-            //dbContext.Categories.Add(category);
-            dbContext.Entry(category).State = System.Data.Entity.EntityState.Modified;
-            dbContext.SaveChanges();
+        //    //dbContext.Categories.Add(category);
+        //    dbContext.Entry(category).State = System.Data.Entity.EntityState.Modified;
+        //    dbContext.SaveChanges();
 
-            //var categories = dbContext.Categories.ToList();
+        //    //var categories = dbContext.Categories.ToList();
 
-            // return a view
-            //return View("Index",categories);
-            string msg = $"{category.CategoryName} is successfully modified!";
-            //ViewBag.Message = msg;
-            TempData["Message"] = msg;
-            return RedirectToAction("Index");
-        }
+        //    // return a view
+        //    //return View("Index",categories);
+        //    string msg = $"{category.CategoryName} is successfully modified!";
+        //    //ViewBag.Message = msg;
+        //    TempData["Message"] = msg;
+        //    return RedirectToAction("Index");
+        //}
     }
 }
