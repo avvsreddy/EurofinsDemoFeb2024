@@ -1,0 +1,37 @@
+﻿@model KnowledgeHubPortal.WebApplication.Models.Domain.Entities.Category
+@{
+    ViewBag.Title = "Edit";
+}
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+
+<h2>Edit Category</h2>
+
+<div class="container mt-5">
+    <form action="/Categories/Edit" method="post">
+        <div class="mb-3">
+            <label for="categoryName" class="form-label">Category Name</label>
+            @*<input type="text" class="form-control"  name="catagoryName" placeholder="Enter category name" required>*@
+            @Html.TextBoxFor(m => m.CategoryName, new { @class = "form-control" })
+            <small> @Html.ValidationMessageFor(m => m.CategoryName)  </small>
+        </div>
+        <div class="mb-3">
+            <label for="categoryDescription" class="form-label">Category Description</label>
+            @*<textarea class="form-control" id="categoryDescription" name="categoryDescription" rows="3" placeholder="Enter category description" required></textarea>*@
+            @Html.TextAreaFor(m => m.CategoryDescription, new { @class = "form-control" })
+            <small>@Html.ValidationMessageFor(m => m.CategoryDescription)</small>
+        </div>
+
+        <input type="hidden" name="categoryid" value="@Model.CategoryID" />
+
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+
+
+
+
+

@@ -9,7 +9,16 @@
 }
 <div class="row">
     <div class="col-9">
-        <h2>Category List (@Model.Count)</h2>
+        <h2>Category List <span class="badge bg-secondary">@Model.Count</span></h2>
+
+        @if (TempData["Message"] != null)
+        {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>@TempData["Message"]</strong> 
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        }
+
     </div>
     <div class="col-3">
         <a href="/Categories/Create" class="btn btn-success">Add New Category</a>
@@ -42,6 +51,16 @@
                     <div class="card-body">
                         <h5 class="card-title">@item.CategoryName</h5>
                         <h6 class="card-subtitle mb-2 text-muted">@item.CategoryDescription</h6>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-8">
+                                <a class="btn btn-primary" href="/Categories/Edit/@item.CategoryID">Edit</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn btn-danger align-content-end" href="/Categories/Delete/@item.CategoryID">Delete</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

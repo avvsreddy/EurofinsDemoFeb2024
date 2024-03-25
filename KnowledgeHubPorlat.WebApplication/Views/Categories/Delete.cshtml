@@ -1,0 +1,9 @@
+﻿@model KnowledgeHubPortal.WebApplication.Models.Domain.Entities.Category
+
+    ViewBag.Title = "Delete";
+}
+
+<h2>Are you Sure to Delete  @Model.CategoryName ?</h2>
+<a class="btn btn-danger" href="/Categories/ConfirmDelete/@Model.CategoryID">Yes</a>
+<a class="btn btn-primary" href="/Categories">No</a>
+

@@ -58,6 +58,74 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
 
             // return a view
             //return View("Index",categories);
+            string msg = $"{category.CategoryName} is successfully created!";
+            //ViewBag.Message = msg;
+            TempData["Message"] = msg;
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            // fetch the category by id
+            Category categoryToDel = dbContext.Categories.Find(id);
+            if (categoryToDel != null)
+            {
+                return View(categoryToDel);
+                //dbContext.Categories.Remove(categoryToDel);
+                //dbContext.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+        public ActionResult ConfirmDelete(int id)
+        {
+            Category categoryToDel = dbContext.Categories.Find(id);
+            if (categoryToDel != null)
+            {
+                //return View(categoryToDel);
+                dbContext.Categories.Remove(categoryToDel);
+                dbContext.SaveChanges();
+            }
+            string msg = $"{categoryToDel.CategoryName} is successfully deleted!";
+            //ViewBag.Message = msg;
+            TempData["Message"] = msg;
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            Category categoryToEdit = dbContext.Categories.Find(id);
+            if (categoryToEdit != null)
+            {
+                return View(categoryToEdit);
+                //dbContext.Categories.Remove(categoryToDel);
+                //dbContext.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Category category)
+        {
+            // Validate the input data
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            // if its invalid - send the form with error message
+            // if its valid - send the data to back end for saving
+
+            //dbContext.Categories.Add(category);
+            dbContext.Entry(category).State = System.Data.Entity.EntityState.Modified;
+            dbContext.SaveChanges();
+
+            //var categories = dbContext.Categories.ToList();
+
+            // return a view
+            //return View("Index",categories);
+            string msg = $"{category.CategoryName} is successfully modified!";
+            //ViewBag.Message = msg;
+            TempData["Message"] = msg;
             return RedirectToAction("Index");
         }
     }
