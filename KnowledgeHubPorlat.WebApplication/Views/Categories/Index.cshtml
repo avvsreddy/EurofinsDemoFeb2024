@@ -7,25 +7,49 @@
 @{
     ViewBag.Title = "Index";
 }
+<div class="row">
+    <div class="col-9">
+        <h2>Category List (@Model.Count)</h2>
+    </div>
+    <div class="col-3">
+        <a href="/Categories/Create" class="btn btn-success">Add New Category</a>
+    </div>
+</div>
+    @*<table class="table table-bordered table-hover" >
+            <tr>
+                <td>Category ID</td>
+                <td>Name</td>
+                <td>Description</td>
+            </tr>
+            @foreach (var item in Model)
+            {
 
-<h2>Category List (@Model.Count)</h2>
 
-<table>
-    <tr>
-        <td>Category ID</td>
-        <td>Name</td>
-        <td>Description</td>
-    </tr>
-    @foreach (var item in Model)
-    {
+            <tr>
+                <td>@item.CategoryID</td</div>
+                <td>@item.CategoryName</td>
+                <td>@item.CategoryDescription</td>
+            </tr>
+            }
+
+        </table>*@
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 col-sm-1 m-2">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.CategoryName</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@item.CategoryDescription</h6>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 
 
-    <tr>
-        <td>@item.CategoryID</td>
-        <td>@item.CategoryName</td>
-        <td>@item.CategoryDescription</td>
-    </tr>
-    }
 
-</table>
+
+
 
