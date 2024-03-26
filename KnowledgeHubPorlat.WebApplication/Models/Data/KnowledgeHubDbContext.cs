@@ -16,5 +16,6 @@ namespace KnowledgeHubPortal.WebApplication.Models.Data
 
         // configure entities - tables
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Article> Articles { get; set; }
     }
 }
