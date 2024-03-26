@@ -186,9 +186,11 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Data\KHPortalRepository.cs" />
     <Compile Include="Models\Data\KnowledgeHubDbContext.cs" />
     <Compile Include="Models\Domain\Entities\Article.cs" />
     <Compile Include="Models\Domain\Entities\Category.cs" />
+    <Compile Include="Models\Domain\IKHPortalRepository.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

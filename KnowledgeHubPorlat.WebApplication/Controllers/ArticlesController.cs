@@ -13,7 +13,8 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
         // GET: Articles
         public ActionResult Index() // Browsing Articles
         {
-            return View();
+            // Show only the articles which are apporved
+            return View(db.Articles.ToList());
         }
         [HttpGet]
         public ActionResult Submit()
