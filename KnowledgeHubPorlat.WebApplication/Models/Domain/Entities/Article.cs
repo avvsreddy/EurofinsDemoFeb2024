@@ -18,5 +18,6 @@ namespace KnowledgeHubPortal.WebApplication.Models.Domain.Entities
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
         public DateTime DatePosted { get; set; }
+        public bool IsApproved { get; set; }
     }
 }

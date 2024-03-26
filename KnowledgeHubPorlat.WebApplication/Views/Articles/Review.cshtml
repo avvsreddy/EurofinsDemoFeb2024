@@ -1,0 +1,69 @@
+﻿@model IEnumerable<KnowledgeHubPortal.WebApplication.Models.Domain.Entities.Article>
+
+@{
+    ViewBag.Title = "Review";
+}
+
+<h2>Review Articles</h2>
+
+<h3>@TempData["Message"]</h3>
+
+
+<form method="post">
+
+    <table class="table table-hover bg-light table-bordered">
+        <tr>
+
+            <th>
+                Review
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.CategoryName)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.PostedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatePosted)
+            </th>
+
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    <input type="checkbox" name="articleIds" value="@item.ArticleID" />
+                </td>
+
+                <td>
+                    <a href="@item.UrlPath" target="_blank">@item.Title</a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DatePosted)
+                </td>
+
+
+            </tr>
+        }
+
+    </table>
+
+
+    <input class="btn btn-info" formaction="/Articles/Approve" type="submit" name="btn1" value="Approve" />
+    <input class="btn btn-danger" formaction="/Articles/Reject" type="Submit" name="btn2" value="Reject" />
+</form>

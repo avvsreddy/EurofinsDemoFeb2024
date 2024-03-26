@@ -271,6 +271,7 @@
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Shared\_CreateOrEditPartialPage.cshtml" />
     <Content Include="Views\Articles\Submit.cshtml" />
+    <Content Include="Views\Articles\Review.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
