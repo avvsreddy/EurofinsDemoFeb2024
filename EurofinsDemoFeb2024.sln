@@ -171,6 +171,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeHubPortal.WebAppli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagementWebApplication", "ContactManagementWebApplication\ContactManagementWebApplication.csproj", "{88310E67-AF71-48FE-94BF-35513935CCA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureADSWebApplication", "AzureADSWebApplication\AzureADSWebApplication.csproj", "{823BC54A-42A8-425A-AFA2-6F00618AE749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{3733295E-A8EE-4602-B417-2497C428BACA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +409,14 @@ Global
 		{88310E67-AF71-48FE-94BF-35513935CCA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88310E67-AF71-48FE-94BF-35513935CCA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88310E67-AF71-48FE-94BF-35513935CCA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{823BC54A-42A8-425A-AFA2-6F00618AE749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{823BC54A-42A8-425A-AFA2-6F00618AE749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{823BC54A-42A8-425A-AFA2-6F00618AE749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{823BC54A-42A8-425A-AFA2-6F00618AE749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3733295E-A8EE-4602-B417-2497C428BACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3733295E-A8EE-4602-B417-2497C428BACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3733295E-A8EE-4602-B417-2497C428BACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3733295E-A8EE-4602-B417-2497C428BACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -477,6 +489,8 @@ Global
 		{8F62736E-1D25-452D-939A-52C85A794271} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
 		{1F362F65-9F83-4F7D-B274-BAA2FEBBC8F8} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
 		{88310E67-AF71-48FE-94BF-35513935CCA8} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
+		{823BC54A-42A8-425A-AFA2-6F00618AE749} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
+		{3733295E-A8EE-4602-B417-2497C428BACA} = {2EE55B02-6DE7-4B86-B868-821BBAFDE90D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C13A543-40EC-45BE-A66A-2135669D4278}

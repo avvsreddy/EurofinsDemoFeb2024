@@ -17,6 +17,7 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
             return View(db.Articles.ToList());
         }
         [HttpGet]
+        [Authorize]
         public ActionResult Submit()
         {
             // get the category info
@@ -32,6 +33,7 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
             return View();
         }
         [HttpPost]
+        [Authorize]
         public ActionResult Submit(Article article)
         {
             // validate
@@ -58,13 +60,14 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
             return RedirectToAction("Submit");
         }
 
+        [Authorize(Roles = "admin")]
         public ActionResult Review()
         {
             // get the non approved articles
             var articlesToReview = db.Articles.Include("Category").Where(a => a.IsApproved == false).ToList();
             return View(articlesToReview);
         }
-
+        [Authorize(Roles = "admin")]
         public ActionResult Approve(int[] articleIds)
         {
             // change the IsApproved property to true
@@ -81,7 +84,7 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
             //return View("Review");
             return RedirectToAction("Review");
         }
-
+        [Authorize(Roles = "admin")]
         public ActionResult Reject(int[] articleIds)
         {
             // delete all the records

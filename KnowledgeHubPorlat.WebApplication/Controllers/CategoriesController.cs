@@ -1,14 +1,18 @@
 ﻿using KnowledgeHubPortal.WebApplication.Models.Data;
 using KnowledgeHubPortal.WebApplication.Models.Domain.Entities;
+using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace KnowledgeHubPortal.WebApplication.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class CategoriesController : Controller
     {
         KnowledgeHubDbContext dbContext = new KnowledgeHubDbContext(); // use DIP
         // GET: Categories
+        [AllowAnonymous]
         public ActionResult Index() // display categories
         {
             // get the categories data from model
@@ -33,6 +37,30 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
             //pass the data to view
             return View(categories);
         }
+
+        // async
+        // await
+
+        public async Task<ActionResult> IndexAsync()
+        {
+            // line 1
+            // 2
+            //3
+
+
+
+            var categories = await dbContext.Categories.ToListAsync();
+            //
+            //
+            //
+            //
+
+
+            //pass the data to view
+            return View(categories);
+        }
+
+
         [HttpGet]
         public ActionResult Create()
         {
@@ -76,11 +104,49 @@ namespace KnowledgeHubPortal.WebApplication.Controllers
             return RedirectToAction("Index");
         }
 
+
+        [HttpPost]
+        public async Task<ActionResult> CreateOrUpdateAsync(Category category)
+        {
+            // Validate the input data
+            if (!ModelState.IsValid)
+            {
+                return View(new Category());
+            }
+            // if its invalid - send the form with error message
+            // if its valid - send the data to back end for saving
+
+
+
+            if (category.CategoryID == 0) //new category
+            {
+                dbContext.Categories.Add(category);
+                TempData["Message"] = $"{category.CategoryName} is successfully created!";
+            }
+            else // existing category - need to modify
+            {
+                dbContext.Entry(category).State = System.Data.Entity.EntityState.Modified;
+                TempData["Message"] = $"{category.CategoryName} is successfully modified!";
+            }
+
+            await dbContext.SaveChangesAsync();
+
+            //var categories = dbContext.Categories.ToList();
+
+            // return a view
+            //return View("Index",categories);
+
+            //ViewBag.Message = msg;
+
+            return RedirectToAction("Index");
+        }
+
+
         [HttpGet]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> DeleteAsync(int id)
         {
             // fetch the category by id
-            Category categoryToDel = dbContext.Categories.Find(id);
+            Category categoryToDel = await dbContext.Categories.FindAsync(id);
             if (categoryToDel != null)
             {
                 return View(categoryToDel);
