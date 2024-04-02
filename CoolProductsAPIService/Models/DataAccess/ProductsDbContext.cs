@@ -14,6 +14,7 @@ namespace CoolProductsAPIService.Models.DataAccess
 
         // map entities with tables
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductV2> ProductsV2 { get; set; }
 
 
     }
